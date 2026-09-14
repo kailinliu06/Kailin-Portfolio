@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumina — AI Self-Reflection App — Kailin Liu</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="../index.html" class="logo">Kailin Liu<span>.</span></a>
+    <div class="nav-links">
+      <a href="../about.html">About</a>
+      <div class="nav-item">
+        <a href="../index.html#work">Work <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="../case-studies/xiaohongshu-growth.html">MoreAhead — RedNote Growth Marketing</a>
+          <a href="../case-studies/loudme-kol.html">CocoSoft Technology — AI Influencer Marketing &amp; Strategy</a>
+          <a href="../case-studies/cardlo-global-marketing.html">Cardlo Biotechnology — Global B2B Marketing</a>
+          <a href="../case-studies/raveival.html">Raveival — Market Research &amp; Validation</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="../index.html#projects">Projects <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="fragrance-analytics.html">Consumer Perception Analytics</a>
+          <a href="traini-growth-experiments.html">Traini Growth Experiments</a>
+          <a href="babanana.html">BabaNana Production Mgmt.</a>
+          <a href="lumina-self-reflection.html">Lumina — AI Self-Reflection App</a>
+          <a href="ai-travel-app.html">AI Travel App</a>
+        </div>
+      </div>
+      <a href="../skills.html">Skills</a>
+    </div>
+    <a href="../index.html#contact" class="nav-cta">Let's talk</a>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="wrap">
+    <span class="eyebrow">AI Product Design · Solo Build · Self-Initiated</span>
+    <h1>Designing and Shipping an AI Self-Reflection App, Solo</h1>
+    <p class="hero-lede">A self-initiated AI product — scoped through Columbia's "AI Offer Studio" product-development methodology and built solo with AI-assisted engineering — taking a real personal pain point from pain discovery to a working, publicly-shipped app.</p>
+    <div class="cs-meta">
+      <div><span>Type</span><b>Self-Initiated Product</b></div>
+      <div><span>Role</span><b>Solo Product Designer &amp; Builder</b></div>
+      <div><span>Timeline</span><b>May 2026</b></div>
+      <div><span>Stack</span><b>React · Vite · Gemini / OpenAI API</b></div>
+    </div>
+  </div>
+</header>
+
+<div class="honest-note" style="max-width:var(--max); margin:32px auto 0;">
+  <div class="wrap" style="padding:0;"><b>A note on context:</b> built independently, outside any company or client engagement, using a structured product-development process from Columbia's "AI Offer Studio" course. Included because the process — pain discovery through shipped product — demonstrates product thinking and AI-native building ability directly relevant to product and growth roles.</div>
+</div>
+
+<div class="cs-stats-band">
+  <div class="wrap">
+    <div><b>3</b><span>core MVP features shipped</span></div>
+    <div><b>2</b><span>features scoped out, deliberately</span></div>
+    <div><b>5</b><span>product surfaces built</span></div>
+    <div><b>1</b><span>public GitHub repo</span></div>
+  </div>
+</div>
+
+<div class="cs-body">
+  <div class="wrap cs-layout">
+
+    <nav class="cs-toc">
+      <a href="#pain">Pain Discovery</a>
+      <a href="#user">Target User</a>
+      <a href="#mvp">MVP &amp; Cut Features</a>
+      <a href="#built">What I Built</a>
+      <a href="#blockers">Blockers &amp; Iteration</a>
+      <a href="#reflection">Reflection</a>
+    </nav>
+
+    <div class="cs-content">
+
+      <section id="pain">
+        <h2><span class="num">01</span>Pain Discovery</h2>
+        <p>The pain point was personal and recurring: real insights about my own emotions, behavior, or direction would surface suddenly — mid-conversation, mid-scroll, late at night — then get lost across screenshots, Notes, and chat threads before I could ever connect them into a pattern.</p>
+        <ul>
+          <li>Validated as my own primary user — not a hypothetical persona, but a behavior I could observe in myself daily</li>
+          <li>Also observed the same pattern in peers navigating similar career-exploration and self-growth phases</li>
+          <li>Left unresolved, the cost wasn't just lost notes — it was repeating the same anxieties and behavioral loops without ever building a durable understanding of why</li>
+        </ul>
+        <div class="cs-callout"><b>Problem statement, iterated.</b> My first draft — "help young people understand themselves and reduce disorientation" — was too broad: no specific user, no real blocker. The version I shipped against: young adults navigating career exploration and rapid personal growth can't durably record, connect, or analyze the momentary insights and emotional reflections they generate daily, so the same patterns keep repeating instead of resolving into real self-understanding.</div>
+      </section>
+
+      <section id="user">
+        <h2><span class="num">02</span>Target User &amp; Product Definition</h2>
+        <p>I defined the user narrowly rather than defaulting to "anyone who journals":</p>
+        <ul>
+          <li>20–30-year-olds in career exploration or early professional life — high information intake, frequent self-reflection, prone to overthinking and disorientation</li>
+          <li>Constrained by information overload and a lack of system, not a lack of self-awareness — they reflect constantly, they just have nowhere for it to accumulate</li>
+        </ul>
+        <p>The product one-liner went through the same compression, cut down until an outsider could repeat it back:</p>
+        <div class="cs-callout">An AI product that helps people who are overloaded with information and prone to self-doubt more easily record, connect, and analyze their own thoughts and behavioral patterns.</div>
+      </section>
+
+      <section id="mvp">
+        <h2><span class="num">03</span>MVP &amp; Cut Features</h2>
+        <p>Three core features, each mapped to a specific behavior change:</p>
+        <ul>
+          <li><b>Capture Thoughts</b> — from "insight, then forgotten" to "captured in seconds, kept long-term"</li>
+          <li><b>Analyze Patterns</b> — from "repeating the same emotions with no idea why" to "seeing your own recurring behaviors"</li>
+          <li><b>Generate Reflection</b> — from "I feel like I never change" to a visible, periodic record of how you have</li>
+        </ul>
+        <p>Asked to keep only one, I kept <b>Capture Thoughts</b> — the entry point every other feature depends on.</p>
+        <div class="cs-callout"><b>Cut, deliberately.</b> "AI Advice" (life/career recommendations generated from the data) and "Relationship Insights" (who energizes vs. drains you) were both scoped out — real value, but outside the MVP's core loop, and premature before the product had a base of self-understanding to build on.</div>
+      </section>
+
+      <section id="built">
+        <h2><span class="num">04</span>What I Built</h2>
+        <p>Shipped as a working React app with a Gemini/OpenAI-backed analysis pipeline — bring-your-own-key, no backend required:</p>
+        <div class="cs-img-row" style="grid-template-columns:1fr 1fr;">
+          <figure class="real-fig">
+            <img src="../assets/lumina/screen-capture.jpg" alt="Lumina capture screen with quick-note and deep-reflection modes, plus prompt suggestions">
+            <p class="img-caption">Capture — quick notes or longer journal entries, with prompts for when you don't know where to start.</p>
+          </figure>
+          <figure class="real-fig">
+            <img src="../assets/lumina/screen-library.jpg" alt="Lumina Digital Life Library showing recurring life themes with supporting-evidence counts">
+            <p class="img-caption">Digital Life Library — recurring life themes surfaced automatically, each backed by linked entries.</p>
+          </figure>
+        </div>
+        <figure class="real-fig" style="margin:22px auto;">
+          <img src="../assets/lumina/screen-patterns.jpg" alt="Lumina Cognitive Patterns dashboard showing a detected behavioral loop with an actionable breakthrough insight">
+          <p class="img-caption">Cognitive Patterns — the AI groups entries into recurring behavioral loops and surfaces one actionable break point per loop, backed by the specific entries that triggered it.</p>
+        </figure>
+        <figure class="real-fig" style="margin:22px auto;">
+          <img src="../assets/lumina/screen-analytics.jpg" alt="Lumina Life Insights dashboard showing a 30-day emotional heatmap and trigger/drain breakdowns">
+          <p class="img-caption">Life Insights — a 30-day emotional heatmap plus "what triggers you" and "what drains you" breakdowns, generated from entry data.</p>
+        </figure>
+        <p>A fifth surface — an AI-generated "annual memoir" card — closes the loop from raw entries to a shareable growth narrative.</p>
+      </section>
+
+      <section id="blockers">
+        <h2><span class="num">05</span>Blockers &amp; Iteration</h2>
+        <p>As features accumulated, the product's information architecture started to overlap — it became unclear where one feature's value ended and another's began.</p>
+        <ul>
+          <li>Diagnosed it as a conceptual/IA problem, not a technical one</li>
+          <li>Resolved by researching structuring approaches and iterating prompts and scope until each surface had a distinct, non-overlapping job — rather than shipping five vaguely similar dashboards</li>
+        </ul>
+        <div class="cs-callout">Current state: the core loop — capture → pattern detection → reflection — runs end to end; some peripheral flows are still rough. Being honest about that distinction is part of the exercise.</div>
+      </section>
+
+      <section id="reflection">
+        <h2><span class="num">06</span>Reflection &amp; What This Demonstrates</h2>
+        <p>30-second version: journaling apps capture feelings but not patterns. I built Lumina, an AI-driven growth companion, to turn scattered reflection into structured self-understanding — automatic emotion tagging, theme clustering, pattern detection, growth insights, and a generated life narrative.</p>
+        <ul>
+          <li><b>User insight</b> — defining a real, narrow problem instead of a broad, unfalsifiable one</li>
+          <li><b>Product design &amp; information architecture</b> — turning a single behavior into a coherent, multi-surface product</li>
+          <li><b>Judgment under scope pressure</b> — cutting real, defensible feature ideas to protect the MVP</li>
+          <li><b>AI-native building</b> — going from idea to a working, AI-integrated product, solo</li>
+        </ul>
+        <p><a href="https://github.com/kailinliu06/Self_Reflection_App" class="btn btn-ghost">View the code on GitHub ↗</a></p>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="cs-nextprev">
+    <a href="babanana.html">← BabaNana Production Mgmt.</a>
+    <a href="ai-travel-app.html">Next: AI Travel App →</a>
+  </div>
+</div>
+
+<footer style="margin-top:40px;">
+  <div class="wrap">
+    <span>© 2026 Kailin Liu</span>
+    <a href="mailto:kl3769@columbia.edu">kl3769@columbia.edu</a>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

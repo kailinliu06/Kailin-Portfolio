@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Travel App Product Strategy Case Study — Kailin Liu</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="../index.html" class="logo">Kailin Liu<span>.</span></a>
+    <div class="nav-links">
+      <a href="../about.html">About</a>
+      <div class="nav-item">
+        <a href="../index.html#work">Work <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="../case-studies/xiaohongshu-growth.html">MoreAhead — RedNote Growth Marketing</a>
+          <a href="../case-studies/loudme-kol.html">CocoSoft Technology — AI Influencer Marketing &amp; Strategy</a>
+          <a href="../case-studies/cardlo-global-marketing.html">Cardlo Biotechnology — Global B2B Marketing</a>
+          <a href="../case-studies/raveival.html">Raveival — Market Research &amp; Validation</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="../index.html#projects">Projects <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="fragrance-analytics.html">Consumer Perception Analytics</a>
+          <a href="traini-growth-experiments.html">Traini Growth Experiments</a>
+          <a href="babanana.html">BabaNana Production Mgmt.</a>
+          <a href="lumina-self-reflection.html">Lumina — AI Self-Reflection App</a>
+          <a href="ai-travel-app.html">AI Travel App</a>
+        </div>
+      </div>
+      <a href="../skills.html">Skills</a>
+    </div>
+    <a href="../index.html#contact" class="nav-cta">Let's talk</a>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="wrap">
+    <span class="eyebrow">Product Strategy · User Research · 0→1</span>
+    <h1>Validating a travel product before writing a line of code</h1>
+    <p class="hero-lede">As co-founder, I led research, product definition, competitive strategy, and business-model modeling for an AI travel-planning concept — the case for building it, made before we built it.</p>
+    <div class="cs-meta">
+      <div><span>Role</span><b>Co-Founder</b></div>
+      <div><span>Timeline</span><b>September 2025 – Present</b></div>
+      <div><span>Stage</span><b>Research &amp; product design — pre-prototype</b></div>
+      <div><span>Team</span><b>Student founding team</b></div>
+    </div>
+    <div class="img-placeholder cs-hero-img"><span class="label">[ placeholder — pitch deck cover slide ]</span></div>
+  </div>
+</header>
+
+<div class="honest-note" style="max-width:var(--max); margin:32px auto 0; margin-left:auto; margin-right:auto;">
+  <div class="wrap" style="padding:0;"><b>A note on scope:</b> this project is still in the research and design-validation stage — we have not built a working prototype. What follows is the research, product thinking, and strategic modeling that would inform one. I'm including it because, for product roles, how I structure ambiguity matters as much as whether something has shipped.</div>
+</div>
+
+<div class="cs-stats-band">
+  <div class="wrap">
+    <div><b>87</b><span>survey respondents</span></div>
+    <div><b>8</b><span>in-depth user interviews</span></div>
+    <div><b>6</b><span>core features scoped</span></div>
+    <div><b>3</b><span>monetization models modeled</span></div>
+  </div>
+</div>
+
+<div class="cs-body">
+  <div class="wrap cs-layout">
+
+    <nav class="cs-toc">
+      <a href="#problem">Problem</a>
+      <a href="#research">Research</a>
+      <a href="#reframe">The Reframe</a>
+      <a href="#features">Feature Definition</a>
+      <a href="#competitive">Competitive Landscape</a>
+      <a href="#biz">Business Model</a>
+      <a href="#next">Current Stage &amp; Next Steps</a>
+    </nav>
+
+    <div class="cs-content">
+
+      <section id="problem">
+        <h2><span class="num">01</span>The Problem</h2>
+        <p>Independent travelers planning their own trips face fragmented information, high decision costs, and generic tools that don't actually understand personal preferences. As co-founder, my job was to figure out whether that problem was real enough — and specific enough — to build a product around.</p>
+      </section>
+
+      <section id="research">
+        <h2><span class="num">02</span>User Research</h2>
+        <p>I led a research program with young, independent travelers — an 87-response survey plus 8 in-depth 1:1 interviews — bilingually distributed through university WeChat groups and intentionally skewed toward Chinese international students aged 18–24 in the U.S., the core segment I'd targeted.</p>
+        <ul>
+          <li>Core friction points: difficulty choosing a destination, information scattered across too many sources, slow group decision-making, and — most importantly — a recurring complaint that existing tools are information-rich but preference-blind</li>
+          <li><b>81 of 87 respondents already use Xiaohongshu (RedNote)</b> for trip planning — ahead of Google Maps, Ctrip, and friends' recommendations</li>
+          <li>Most spent 4–6+ hours planning a single trip and cross-referenced 3+ apps to do it</li>
+          <li>Willingness to pay was conditional, not a given — only if the assistant saved 3+ hours of planning, at ¥10–20 in China or $5–7 in the U.S.</li>
+        </ul>
+        <div class="cs-callout">"Xiaohongshu is amazing but chaotic." / "I always double-check AI because I don't fully trust it." — survey respondents</div>
+        <p>That price/time bar shaped the phased go-to-market I proposed: Chinese international students in the U.S. first (bilingual, frequent travelers, already living on Xiaohongshu) → international students globally → a broader Gen Z / Millennial market.</p>
+
+        <figure class="persona-card">
+          <div class="persona-head">
+            <div class="persona-avatar">JZ</div>
+            <div>
+              <div class="persona-name">Jessie Zhang <span>— The Time-Optimizing Traveler</span></div>
+              <div class="persona-meta">21 · Chinese international student · Communication major, studying abroad · Los Angeles · Plans 3–6 trips/year</div>
+            </div>
+          </div>
+          <p class="persona-quote">"I like going to new places, but planning everything by myself feels like a whole project."</p>
+          <div class="persona-grid">
+            <div>
+              <h5>Behaviors</h5>
+              <ul>
+                <li>Scrolls Xiaohongshu for recommendations, saves/bookmarks posts</li>
+                <li>Opens Google Maps to check distances &amp; time estimates</li>
+                <li>Cross-checks multiple platforms — doesn't trust just one source</li>
+                <li>Becomes the default trip planner for her friend group</li>
+              </ul>
+            </div>
+            <div>
+              <h5>Frustrations</h5>
+              <ul>
+                <li>Information fragmentation — inspiration, logistics, and booking live in different apps</li>
+                <li>Low trust — ads, influencer bias, outdated or inaccurate posts</li>
+                <li>Fragile plans — small disruptions (weather, closures) derail the whole schedule</li>
+                <li>AI itineraries that feel generic, not personalized</li>
+              </ul>
+            </div>
+          </div>
+          <div class="persona-needs">
+            <h5>Needs</h5>
+            <p>A tool that summarizes and filters Xiaohongshu content, combines map + timeline in one view, adapts dynamically when plans change, and reduces manual research instead of adding another app to check.</p>
+          </div>
+          <p class="persona-source">Synthesized from 8 in-depth interviews + 87-response survey · before/after-AI-assisted versions reconciled into one profile</p>
+        </figure>
+      </section>
+
+      <section id="reframe">
+        <h2><span class="num">03</span>The Reframe: Not a Generator, a Decision Ecosystem</h2>
+        <div class="cs-callout">Users didn't want a tool that spits out an itinerary. They wanted something that stayed with them from inspiration through the trip itself and into the memory of it.</div>
+        <p>That insight moved the product thesis from a single-purpose itinerary generator toward a full travel decision ecosystem spanning inspiration, planning, booking, in-trip execution, and memory — a materially bigger and riskier scope, which is exactly why I wanted the research in first.</p>
+      </section>
+
+      <section id="features">
+        <h2><span class="num">04</span>Feature Definition &amp; Prioritization</h2>
+        <p>Working from the reframed user journey, I helped define and continually re-prioritize the core feature set against an MVP line — separating what earns a first release from what's a later-stage bet:</p>
+        <ul>
+          <li><b>Travel DNA</b> — a lightweight preference-identification onboarding flow</li>
+          <li><b>Dynamic itinerary</b> — adapts as preferences and constraints change</li>
+          <li><b>Interactive map</b> — spatial planning, not just a list view</li>
+          <li><b>Wishlist</b> — inspiration capture before a trip is even committed to</li>
+          <li><b>Memories collection</b> — closes the loop after the trip ends</li>
+          <li><b>Collaborative planning</b> — for the multi-traveler decision problem the research kept surfacing</li>
+        </ul>
+        <p>I iterated onboarding flow, preference input design, and AI-recommendation logic multiple times, specifically testing how much users trusted an AI recommendation and how they wanted personalization explained to them — trust, not just accuracy, was the recurring blocker.</p>
+        <p>A few mechanics came directly out of that trust problem rather than a feature checklist:</p>
+        <ul>
+          <li>Drag an itinerary card to a new time slot → the system auto-reschedules the rest of the day and flags any newly-crowded slot, instead of silently accepting a bad plan</li>
+          <li>An "energy bar" along the timeline (roughly 80% morning / 60% afternoon / 40% evening) makes pacing visible instead of leaving users to guess whether a day is over-packed</li>
+          <li>Links pasted into the Wishlist from Xiaohongshu or TikTok get auto-tagged with location, hours, and a credibility score, so imported inspiration doesn't quietly carry bad information into a real plan</li>
+        </ul>
+        <figure class="real-fig" style="background:#fff; border:1.5px solid var(--line); border-radius:var(--radius); padding:20px 8px;">
+          <svg viewBox="0 0 1040 320" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; font-family:'Inter',sans-serif;">
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0,0 L10,5 L0,10 z" fill="#4a463e"/>
+              </marker>
+            </defs>
+
+            <!-- Lane 1 label -->
+            <text x="8" y="24" font-size="12" letter-spacing="1" fill="#ff4d2e" font-weight="700">TRIP CREATION</text>
+
+            <!-- Lane 1 boxes -->
+            <g font-size="12.5" fill="#15130f">
+              <rect x="8" y="36" width="140" height="52" rx="10" fill="#faf6ee" stroke="#e4d9c2"/>
+              <text x="78" y="58" text-anchor="middle" font-weight="600">Create New</text>
+              <text x="78" y="73" text-anchor="middle" font-weight="600">Trip</text>
+
+              <rect x="184" y="36" width="140" height="52" rx="10" fill="#faf6ee" stroke="#e4d9c2"/>
+              <text x="254" y="58" text-anchor="middle" font-weight="600">"Where are</text>
+              <text x="254" y="73" text-anchor="middle" font-weight="600">you going?"</text>
+
+              <rect x="360" y="30" width="150" height="64" rx="10" fill="#ffe3d9" stroke="#ff4d2e"/>
+              <text x="435" y="50" text-anchor="middle" font-weight="700">Choose Import</text>
+              <text x="435" y="65" text-anchor="middle" font-weight="700">Method</text>
+              <text x="435" y="80" text-anchor="middle" font-size="9.5" fill="#7a1f0d">Reels · Maps · Screenshots</text>
+              <text x="435" y="91" text-anchor="middle" font-size="9.5" fill="#7a1f0d">Wishlist · Manual</text>
+
+              <rect x="546" y="36" width="140" height="52" rx="10" fill="#faf6ee" stroke="#e4d9c2"/>
+              <text x="616" y="58" text-anchor="middle" font-weight="600">AI Extracts</text>
+              <text x="616" y="73" text-anchor="middle" font-weight="600">Metadata</text>
+
+              <rect x="722" y="36" width="140" height="52" rx="10" fill="#faf6ee" stroke="#e4d9c2"/>
+              <text x="792" y="58" text-anchor="middle" font-weight="600">Smart</text>
+              <text x="792" y="73" text-anchor="middle" font-weight="600">Clustering</text>
+
+              <rect x="898" y="30" width="134" height="64" rx="10" fill="#dcece7" stroke="#2c6e64"/>
+              <text x="965" y="52" text-anchor="middle" font-weight="700" fill="#1d4b43">AI Generates</text>
+              <text x="965" y="67" text-anchor="middle" font-weight="700" fill="#1d4b43">Draft</text>
+              <text x="965" y="82" text-anchor="middle" font-weight="700" fill="#1d4b43">Itinerary</text>
+            </g>
+            <g stroke="#4a463e" stroke-width="1.5" marker-end="url(#arrow)">
+              <line x1="148" y1="62" x2="182" y2="62"/>
+              <line x1="324" y1="62" x2="358" y2="62"/>
+              <line x1="510" y1="62" x2="544" y2="62"/>
+              <line x1="686" y1="62" x2="720" y2="62"/>
+              <line x1="862" y1="62" x2="896" y2="62"/>
+            </g>
+
+            <!-- Lane 2 label -->
+            <text x="8" y="180" font-size="12" letter-spacing="1" fill="#2c6e64" font-weight="700">MEMORIES &amp; SHARING</text>
+
+            <!-- Lane 2 boxes -->
+            <g font-size="12.5" fill="#15130f">
+              <rect x="8" y="192" width="140" height="52" rx="10" fill="#faf6ee" stroke="#e4d9c2"/>
+              <text x="78" y="214" text-anchor="middle" font-weight="600">Memories</text>
+              <text x="78" y="229" text-anchor="middle" font-weight="600">Tab</text>
+
+              <rect x="184" y="192" width="140" height="52" rx="10" fill="#faf6ee" stroke="#e4d9c2"/>
+              <text x="254" y="214" text-anchor="middle" font-weight="600">City Memory</text>
+              <text x="254" y="229" text-anchor="middle" font-weight="600">Page</text>
+
+              <rect x="360" y="186" width="150" height="64" rx="10" fill="#ffe3d9" stroke="#ff4d2e"/>
+              <text x="435" y="206" text-anchor="middle" font-weight="700">AI Memory</text>
+              <text x="435" y="221" text-anchor="middle" font-weight="700">Timeline</text>
+              <text x="435" y="236" text-anchor="middle" font-size="9.5" fill="#7a1f0d">Timeline · Highlights</text>
+              <text x="435" y="247" text-anchor="middle" font-size="9.5" fill="#7a1f0d">Path Tracking</text>
+
+              <rect x="546" y="192" width="140" height="52" rx="10" fill="#faf6ee" stroke="#e4d9c2"/>
+              <text x="616" y="214" text-anchor="middle" font-weight="600">Create Shareable</text>
+              <text x="616" y="229" text-anchor="middle" font-weight="600">Album</text>
+
+              <rect x="722" y="192" width="140" height="52" rx="10" fill="#faf6ee" stroke="#e4d9c2"/>
+              <text x="792" y="214" text-anchor="middle" font-weight="600">Cover, Title</text>
+              <text x="792" y="229" text-anchor="middle" font-weight="600">&amp; Preview</text>
+
+              <rect x="898" y="186" width="134" height="64" rx="10" fill="#dcece7" stroke="#2c6e64"/>
+              <text x="965" y="213" text-anchor="middle" font-weight="700" fill="#1d4b43">Share Trip</text>
+              <text x="965" y="228" text-anchor="middle" font-weight="700" fill="#1d4b43">Album</text>
+            </g>
+            <g stroke="#4a463e" stroke-width="1.5" marker-end="url(#arrow)">
+              <line x1="148" y1="218" x2="182" y2="218"/>
+              <line x1="324" y1="218" x2="358" y2="218"/>
+              <line x1="510" y1="218" x2="544" y2="218"/>
+              <line x1="686" y1="218" x2="720" y2="218"/>
+              <line x1="862" y1="218" x2="896" y2="218"/>
+            </g>
+
+            <text x="8" y="300" font-size="10.5" fill="#4a463e" font-style="italic">Redrawn from my original Miro user-flow board for legibility — same logic, cleaner presentation.</text>
+          </svg>
+        </figure>
+        <p>Here's the dynamic-itinerary screen in practice — the trust mechanics aren't hidden in a settings menu, they're on the main view the traveler checks every morning:</p>
+        <div class="kanoa-row">
+          <figure class="kanoa-phone">
+            <img src="../assets/ai-travel-app/screen-day-itinerary.jpg" alt="Kanoa Trip day-view screen showing energy pacing, a rain warning that auto-reschedules the plan, and a smart lunch suggestion">
+            <p class="kanoa-caption">Day view — energy pacing, weather-triggered auto-reschedule, and an AI suggestion surfaced at the moment it's useful, not buried in a menu.</p>
+          </figure>
+        </div>
+        <p>The rest of the app follows the same logic — surface AI reasoning inline instead of hiding it, and keep every screen anchored to a specific decision the traveler is making:</p>
+        <div class="kanoa-row">
+          <figure class="kanoa-phone small">
+            <img src="../assets/ai-travel-app/screen-chicago-memory.jpg" alt="Kanoa Trip city memory screen for Chicago with an AI Insight card summarizing travel style and time spent">
+            <p class="kanoa-caption">City memory page — AI Insight summarizes travel style from past trips instead of just listing photos.</p>
+          </figure>
+          <figure class="kanoa-phone small">
+            <img src="../assets/ai-travel-app/screen-memories-map.jpg" alt="Kanoa Trip World View map showing visited cities as stars, with a 2024 recap summary">
+            <p class="kanoa-caption">World View — visited cities plotted on a map, with a yearly recap surfaced automatically.</p>
+          </figure>
+          <figure class="kanoa-phone small">
+            <img src="../assets/ai-travel-app/screen-wishlist.jpg" alt="Kanoa Trip Wishlist screen with an Inspiration Box for links imported from Xiaohongshu, Instagram, and Google Maps">
+            <p class="kanoa-caption">Wishlist — imported links from Xiaohongshu/Instagram/Maps land in an Inspiration Box before becoming a saved place.</p>
+          </figure>
+          <figure class="kanoa-phone small">
+            <img src="../assets/ai-travel-app/screen-profile.jpg" alt="Kanoa Trip Profile screen showing a Travel Personal type, trip stats, and an AI-derived travel style summary">
+            <p class="kanoa-caption">Profile — a "Travel Personal" type and style summary derived from actual trip history, not a one-time quiz.</p>
+          </figure>
+        </div>
+      </section>
+
+      <section id="competitive">
+        <h2><span class="num">05</span>Competitive Landscape</h2>
+        <p>I broke down the product logic, UX, and business models of Google Maps, TripAdvisor, Wanderlog, and several AI-travel startups, looking for genuine white space rather than a "we do it better" pitch. The positioning that came out of it: <b>more understanding than a traditional planning tool, more structured than a search platform, more decision-complete than a content platform.</b></p>
+      </section>
+
+      <section id="biz">
+        <h2><span class="num">06</span>Business Model &amp; Market Sizing</h2>
+        <p>I modeled three monetization paths, building out usage assumptions and ARPU, CAC, and LTV estimates for each to understand how pricing structure would affect conversion and long-term retention:</p>
+        <ul>
+          <li>Freemium</li>
+          <li>Subscription tiers</li>
+          <li>Per-trip pricing</li>
+        </ul>
+        <p>Separately, I built and iterated a TAM / SAM / SOM breakdown to size the realistic opportunity rather than lead with an inflated total-market number.</p>
+        <div class="img-placeholder"><span class="label">[ placeholder — TAM/SAM/SOM &amp; pricing model slide ]</span></div>
+      </section>
+
+      <section id="next">
+        <h2><span class="num">07</span>Current Stage &amp; Next Steps</h2>
+        <p>The product is currently at the research- and design-validation stage — no working prototype yet. The next step is low-cost beta testing through Columbia's Build Lab and student-founder network, using campus early adopters to get the first real usage signal before committing engineering resources to a full build.</p>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="cs-nextprev">
+    <a href="lumina-self-reflection.html">← Lumina — AI Self-Reflection App</a>
+    <a href="../index.html#projects">Back to all projects →</a>
+  </div>
+</div>
+
+<footer style="margin-top:40px;">
+  <div class="wrap">
+    <span>© 2026 Kailin Liu</span>
+    <a href="mailto:kl3769@columbia.edu">kl3769@columbia.edu</a>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

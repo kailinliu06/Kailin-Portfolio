@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consumer Perception Analytics — Kailin Liu</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="../index.html" class="logo">Kailin Liu<span>.</span></a>
+    <div class="nav-links">
+      <a href="../about.html">About</a>
+      <div class="nav-item">
+        <a href="../index.html#work">Work <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="../case-studies/xiaohongshu-growth.html">MoreAhead — RedNote Growth Marketing</a>
+          <a href="../case-studies/loudme-kol.html">CocoSoft Technology — AI Influencer Marketing &amp; Strategy</a>
+          <a href="../case-studies/cardlo-global-marketing.html">Cardlo Biotechnology — Global B2B Marketing</a>
+          <a href="../case-studies/raveival.html">Raveival — Market Research &amp; Validation</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="../index.html#projects">Projects <span class="caret">▾</span></a>
+        <div class="dropdown">
+          <a href="fragrance-analytics.html">Consumer Perception Analytics</a>
+          <a href="traini-growth-experiments.html">Traini Growth Experiments</a>
+          <a href="babanana.html">BabaNana Production Mgmt.</a>
+          <a href="lumina-self-reflection.html">Lumina — AI Self-Reflection App</a>
+          <a href="ai-travel-app.html">AI Travel App</a>
+        </div>
+      </div>
+      <a href="../skills.html">Skills</a>
+    </div>
+    <a href="../index.html#contact" class="nav-cta">Let's talk</a>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="wrap">
+    <span class="eyebrow">Marketing Analytics · Text Mining · Regression</span>
+    <h1>What actually drives a fragrance's rating? Turning 7,950 reviews into an answer.</h1>
+    <p class="hero-lede">A market analysis &amp; predictive modeling course project: SQL, Python, and LLM-assisted text analysis on a dataset of 795 fragrances, built from scratch to find out what consumers are really evaluating when they leave a review.</p>
+    <div class="cs-meta">
+      <div><span>Type</span><b>Course Project</b></div>
+      <div><span>Timeline</span><b>Sep – Dec 2025</b></div>
+      <div><span>Scope</span><b>795 products · 7,950 reviews</b></div>
+    </div>
+  </div>
+</header>
+
+<div class="cs-body">
+  <div class="wrap">
+    <div class="cs-content">
+
+      <section>
+        <h2><span class="num">01</span>The Question</h2>
+        <p>Fragrance reviews are full of subjective, wildly inconsistent language. The goal was to move past that noise and answer something useful: which perceptual dimensions actually drive a consumer's rating, and can they be traced back to the scent notes in a fragrance's formula?</p>
+      </section>
+
+      <section>
+        <h2><span class="num">02</span>Building the Dataset</h2>
+        <p>We compiled a dataset of 795 fragrances and 7,950 consumer reviews, along with each fragrance's listed scent notes.</p>
+        <ul>
+          <li><b>SQL</b> — filtered and deduplicated raw data, standardized review formatting, removed records with missing ratings, unnested review fields into a clean, review-level table</li>
+          <li><b>Python</b> — cleaned the text (string parsing, list expansion) and standardized the scent-note fields into a structured, analysis-ready frame</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span class="num">03</span>From Raw Opinions to a Measurable Taxonomy</h2>
+        <p>Fragrance reviews mix two different things: concrete scent descriptors ("vanilla," "smoky") and higher-level evaluative judgments ("complex," "cheap-smelling," "makes me feel confident"). I started by manually reading samples to separate these two categories, then used Python with LLM-assisted text analysis — iterating on prompt design across multiple rounds — to extract the abstract evaluative attributes buried in review text at scale.</p>
+        <p>Candidate attributes were semantically clustered and standardized down to <b>10 core consumer-evaluation dimensions</b>, covering things like scent pleasantness, complexity, longevity, freshness, uniqueness, fit/appropriateness, and emotional effect. I then built a review-level attribute-scoring matrix so every review could be scored consistently across all 10 dimensions — turning subjective opinions into structured, comparable data.</p>
+      </section>
+
+      <section>
+        <h2><span class="num">04</span>Modeling: What Actually Predicts a Rating</h2>
+        <p>With the scoring matrix in place, I ran <b>OLS regression</b> to test how much explanatory power each perceptual dimension had over a fragrance's rating, then connected those perceptions back to the actual scent-note formula.</p>
+        <div class="cs-callout">Perceived complexity was the strongest positive driver of rating — stronger than freshness, which was sometimes negatively associated with how a fragrance was rated.</div>
+        <p>That was a real, somewhat counterintuitive finding: consumers rewarded layered, complex scent profiles more consistently than they rewarded a "clean" or fresh impression. I then used <b>LASSO</b> feature selection to identify which specific scent notes most reliably predicted perceived complexity, freshness, and longevity — narrowing a large, noisy feature set down to the notes that actually mattered statistically.</p>
+      </section>
+
+      <section>
+        <h2><span class="num">05</span>What This Practiced</h2>
+        <p>End to end, this project ran the full pipeline growth and product marketing work actually depends on: SQL for data structuring, Python for cleaning and feature engineering, LLM-assisted qualitative coding at a scale manual reading can't reach, and regression modeling to turn "what do people say" into "what actually predicts the outcome." It's the same underlying skill set behind the consumer research in my other case studies — just applied to a dataset instead of a live product.</p>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="cs-nextprev">
+    <a href="../index.html#projects">← All projects</a>
+    <a href="traini-growth-experiments.html">Next: Traini Growth Experiments →</a>
+  </div>
+</div>
+
+<footer style="margin-top:40px;">
+  <div class="wrap">
+    <span>© 2026 Kailin Liu</span>
+    <a href="mailto:kl3769@columbia.edu">kl3769@columbia.edu</a>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

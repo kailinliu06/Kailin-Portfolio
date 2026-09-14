@@ -1,0 +1,12 @@
+# OS junk
+.DS_Store
+
+# Raw / unprocessed source materials (not used by the site, kept locally only)
+assets/babanana-raw-materials/
+assets/loudme-raw-materials/
+assets/traini-raw-materials/
+assets/AI Travel/
+assets/趣环游小红书/
+assets/babananana-processed/
+assets/Self-portrait.JPG
+assets/生活照.JPG
