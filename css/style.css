@@ -229,7 +229,8 @@ section{ padding: 88px 0; }
 .case-card h3{ font-size: 23px; }
 .case-card .role{ font-size: 13.5px; color: var(--accent-ink); font-weight:600; margin-bottom: 10px; }
 .case-card p{ color: var(--ink-soft); font-size: 15px; }
-.case-metrics{ display:flex; gap:22px; margin: 16px 0 20px; flex-wrap:wrap; }
+.case-metrics{ display:flex; gap:14px; margin: 16px 0 20px; flex-wrap:nowrap; }
+.case-metrics div{ flex:1; min-width:0; }
 .case-metrics div b{ display:block; font-family: var(--font-display); font-size: 22px; }
 .case-metrics div span{ font-size: 12px; color: var(--ink-soft); }
 .case-card-link{ margin-top:auto; font-weight:700; font-size:14.5px; display:inline-flex; align-items:center; gap:6px; }
